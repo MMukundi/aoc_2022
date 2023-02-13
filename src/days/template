@@ -1,0 +1,23 @@
+use std::str::FromStr;
+
+use crate::solution::{Unsolved, AOCSolution};
+
+#[derive(Debug,Clone)]
+pub struct InputStruct {}
+impl FromStr for InputStruct {
+    type Err=();
+    fn from_str(s: &str) -> Result<Self, Self::Err> {
+        todo!()
+    }
+}
+
+pub struct Solution;
+impl AOCSolution for Solution {
+    type Input=InputStruct;
+    type Part1=Unsolved;
+    type Part2=Unsolved;
+    type Err = ();
+    fn solve(input:Self::Input)->Result<(Self::Part1,Self::Part2),()> {
+        todo!()
+    }
+}
